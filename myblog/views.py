@@ -1,7 +1,13 @@
-from django.http import HttpResponse
-from django.shortcuts import render
+from django.views import generic
 
+from .models import BlogContent
 # Create your views here.
 
-def index(request):
-    return HttpResponse("Hello, world. You're at the MY BLOG index.")
+class IndexView(generic.ListView):
+    template_name = 'myblog/index.html'
+    context_object_name = 'myblog_content_list'
+
+    def get_queryset(self):
+        return BlogContent.objects.order_by('-create_date')
+
+#[EOF]

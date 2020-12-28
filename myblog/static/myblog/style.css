@@ -1,0 +1,21 @@
+h1 {
+  text-align: center;
+}
+
+.blog-item-header {
+  display: flex;
+}
+.blog-item-header-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: navy;
+}
+.blog-item-header-date {
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: slategray;
+}
+.blog-item-header > h1:last-of-type {
+  margin-left: auto;
+  flex-basis: 16rem;
+}
