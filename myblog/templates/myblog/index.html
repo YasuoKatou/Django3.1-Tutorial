@@ -6,9 +6,14 @@
   <meta name="viewport" content="width=device-width" />
   <title>My BLOG</title>
   <link rel="stylesheet" type="text/css" href="{% static 'myblog/style.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'external/jquery-ui-1.12.1/jquery-ui.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'myblog/jquery-ui-custom.css' %}">
 </head>
 <body>
   <h1>My BLOG</h1>
+  <nav>
+    <div id="addMyBlog" class="btn-flat-dashed-filled">Add BLOG</div>
+  </nav>
   {% for myblog_content in myblog_content_list %}
     <section class="blog-item">
       <div class="blog-item-header">
@@ -20,5 +25,13 @@
       </div>
     </section>
   {% endfor %}
+  <div id="myblog-edit-dialog" style="display:none;">
+    <input type="text" id="myblog-title" placeholder="ブログタイトル" />
+    <input type="textarea" id="myblog-content" placeholder="ブログ本文" />
+  </div>
+  <script src="{% static 'external/jquery-3.5.1.min.js' %}"></script>
+  <script src="{% static 'external/jquery-ui-1.12.1/jquery-ui.js' %}"></script>
+  <script src="{% static 'external/jquery-ui-1.12.1/jquery-ui.min.js' %}"></script>
+  <script src="{% static 'myblog.js' %}"></script>
 </body>
 </html>
