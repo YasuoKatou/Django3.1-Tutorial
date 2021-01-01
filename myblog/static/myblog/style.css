@@ -2,6 +2,15 @@ h1 {
   text-align: center;
 }
 
+nav {
+  text-align: right;
+}
+nav > p {
+  margin: 0;
+  width: 5em;
+  text-align: center;
+}
+
 .blog-item-header {
   display: flex;
   align-items: flex-end;
@@ -13,9 +22,6 @@ h1 {
   color: navy;
   background-color: lemonchiffon;
   flex-grow: 1;
-}
-.blog-item-header-id, #myblog-edit-dialog input[name="myblog-id"] {
-  display: none;
 }
 .blog-item-header-date {
   font-size: 0.8rem;
@@ -46,7 +52,8 @@ h1 {
 }
 
 #myblog-new-dialog,
-#myblog-edit-dialog {
+#myblog-edit-dialog,
+#myblog-tag-list {
   width:100%;
 }
 
@@ -71,4 +78,34 @@ h1 {
 .blog-content-view {
   width: 100%;
   border: none;
+}
+
+.myblog-tag-input {
+  display: flex;
+  align-items: flex-end;
+  align-items: center;
+}
+.myblog-tag-input input[type="text"] {
+  flex-grow: 1;
+  min-width: 1em;
+}
+.myblog-tag-input input[type="button"] {
+  font-size: 0.8rem;
+  width: 3em;
+}
+
+#myblog-tag-list ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+#myblog-tag-list li {
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+}
+
+#myblog-tag-list .tag-list-name {
+  margin: 0;
 }
