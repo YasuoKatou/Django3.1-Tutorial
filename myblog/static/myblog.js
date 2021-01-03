@@ -1,12 +1,4 @@
 /**
- * 初期処理
- */
-$(function(){
-  // 投稿本文のテキストエリアの高さを自動調整する
-  $('textarea.blog-content-view').autoExpand();
-});
-
-/**
  * ブログの新規登録を行う
  */
 $('#addMyBlog').on("click", function() {

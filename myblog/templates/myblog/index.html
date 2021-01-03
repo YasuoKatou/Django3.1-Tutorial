@@ -1,4 +1,5 @@
 {% load static %}
+{% load blog_content__extras %}
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -23,9 +24,7 @@
         <h1 class="blog-item-header-title">{{ myblog_content.content_title }}</h1>
         <h1 class="blog-item-header-date">{{ myblog_content.update_date|date:"Y-n-j h:i" }}</h1>
       </div>
-      <div>
-        <textarea class="blog-content-view" readonly>{{ myblog_content.content_text }}</textarea>
-      </div>
+      <div>{{ myblog_content.content_text|blogContentFilter }}</div>
     </section>
   {% endfor %}
   <div id="myblog-new-dialog" style="display:none;">
@@ -60,7 +59,6 @@
   <script src="{% static 'external/jquery-3.5.1.min.js' %}"></script>
   <script src="{% static 'external/jquery-ui-1.12.1/jquery-ui.js' %}"></script>
   <script src="{% static 'external/jquery-ui-1.12.1/jquery-ui.min.js' %}"></script>
-  <script src="{% static 'external/jquery-autoexpand-1.0.2/jquery.autoexpand.js' %}"></script>
   <script src="{% static 'myblog.js' %}"></script>
 </body>
 </html>

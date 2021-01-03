@@ -11,6 +11,9 @@ nav > p {
   text-align: center;
 }
 
+.blog-item {
+  margin-top: 1em;
+}
 .blog-item-header {
   display: flex;
   align-items: flex-end;
@@ -28,6 +31,11 @@ nav > p {
   font-weight: normal;
   color: slategray;
   flex-basis: 10rem;
+}
+
+.blog_content {
+  margin: 0;
+  font-size: 0.9rem;
 }
 
 .btn-flat-dashed-filled {
@@ -73,11 +81,6 @@ nav > p {
 .button_wrapper {
   margin-top: 0.5em;
   text-align: center;
-}
-
-.blog-content-view {
-  width: 100%;
-  border: none;
 }
 
 .myblog-tag-input {
