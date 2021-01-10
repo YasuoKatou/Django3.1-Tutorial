@@ -23,7 +23,7 @@ nav > p {
   font-size: 1.1rem;
   font-weight: bold;
   color: navy;
-  background-color: lemonchiffon;
+  background-color: dodgerblue;
   flex-grow: 1;
 }
 .blog-item-header-date {
@@ -111,4 +111,23 @@ nav > p {
 
 #myblog-tag-list .tag-list-name {
   margin: 0;
+}
+
+.myblog-tags {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+.myblog-tags > li {
+  display:inline;
+  font-size: 0.7rem;
+  color: darkslateblue;
+  margin-right: 1em;
+  background-color: lightsteelblue;
+  padding-inline-start: 0.5em;
+  padding-inline-end: 0.5em;
+
+  border: 0px solid;
+  border-color: lightsteelblue;
+  border-radius: 8px;
 }

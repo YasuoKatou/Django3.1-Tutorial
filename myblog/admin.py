@@ -1,10 +1,9 @@
 from django.contrib import admin
 
-from .models import BlogContent, BlogTag, BlogTagList
+from .models import BlogContent, BlogTag
 # Register your models here.
 
 admin.site.register(BlogContent)
 admin.site.register(BlogTag)
-admin.site.register(BlogTagList)
 
 #[EOF]
