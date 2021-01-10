@@ -18,6 +18,6 @@ class BlogContent(models.Model):
     blog_tags     = models.ManyToManyField(BlogTag, null=True, blank=True)
 
     def __str__(self):
-        return "[Title]" + self.content_title
+        return self.content_title
 
 #[EOF]
