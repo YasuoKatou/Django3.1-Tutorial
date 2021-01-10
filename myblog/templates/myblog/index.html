@@ -17,7 +17,7 @@
       <div class="blog-item-header">
         <h1 class="blog-item-header-id" style="display:none;">{{ myblog_content.id }}</h1>
         <h1 class="blog-item-header-title">{{ myblog_content.content_title }}</h1>
-        <h1 class="blog-item-header-date">{{ myblog_content.update_date|date:"Y-n-j h:i" }}</h1>
+        <h1 class="blog-item-header-date">{{ myblog_content.update_date|date:"Y-n-j H:i" }}</h1>
       </div>
       <div class="blog_content">{{ myblog_content.content_text|blogContentFilter }}</div>
       {{ myblog_content|blogTags }}
