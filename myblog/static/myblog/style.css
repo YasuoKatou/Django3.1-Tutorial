@@ -15,22 +15,23 @@ nav > p {
   margin-top: 1em;
 }
 .blog-item-header {
-  display: flex;
-  align-items: flex-end;
+  position: relative;
 }
 .blog-item-header-title {
+  width: 100%;
   text-align: left;
   font-size: 1.1rem;
   font-weight: bold;
   color: navy;
-  background-color: dodgerblue;
-  flex-grow: 1;
+  background-color: gold;
 }
 .blog-item-header-date {
+  position: absolute;
+  top: 0;
+  right: 0;
   font-size: 0.8rem;
   font-weight: normal;
-  color: slategray;
-  flex-basis: 10rem;
+  color: darkslategray;
 }
 
 .blog_content {
