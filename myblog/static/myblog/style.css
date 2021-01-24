@@ -132,3 +132,18 @@ nav > p {
   border-color: lightsteelblue;
   border-radius: 8px;
 }
+
+.blog_content > pre {
+  padding: 0.5em 1em;
+  color: white;
+  background-color: black;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+
+.blog_content > p > code {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  background-color: lightgray;
+  border-radius: 3px;
+}
