@@ -10,9 +10,26 @@ nav > p {
   width: 5em;
   text-align: center;
 }
-
+.blog-contents {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+@media ( max-width : 860px ) {
+  .blog-item {
+    width: 40em;
+  }
+}
+@media ( max-width : 667px ) {
+  .blog-item {
+    width: 20em;
+  }
+}
 .blog-item {
   margin-top: 1em;
+  padding: 0.3em;
+  background-color: cornsilk;
 }
 .blog-item-header {
   position: relative;
@@ -24,6 +41,7 @@ nav > p {
   font-weight: bold;
   color: navy;
   background-color: gold;
+  padding-left: 0.3em;
 }
 .blog-item-header-date {
   position: absolute;

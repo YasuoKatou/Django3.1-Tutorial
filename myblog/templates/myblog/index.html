@@ -12,6 +12,7 @@
 </head>
 <body>
   <h1>My BLOG</h1>
+  <section class="blog-contents">
   {% for myblog_content in myblog_content_list %}
     <section class="blog-item">
       <div class="blog-item-header">
@@ -23,6 +24,7 @@
       {{ myblog_content|blogTags }}
     </section>
   {% endfor %}
+  </section>
   <script src="{% static 'external/jquery-3.5.1.min.js' %}"></script>
   <script src="{% static 'external/jquery-ui-1.12.1/jquery-ui.js' %}"></script>
   <script src="{% static 'external/jquery-ui-1.12.1/jquery-ui.min.js' %}"></script>
