@@ -47,7 +47,7 @@
   ```python manage.py test polls```
 
 ## 変更履歴
-(1) runserver を行うと、下記警告メッセージを出力する対応  
+(1) runserver を行うと、下記警告メッセージを出力する対応（2021/7/18)  
 
     Watching for file changes with StatReloader
     Performing system checks...
