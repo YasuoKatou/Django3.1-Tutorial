@@ -46,3 +46,16 @@
 
   ```python manage.py test polls```
 
+## 変更履歴
+(1) runserver を行うと、下記警告メッセージを出力する対応  
+
+    Watching for file changes with StatReloader
+    Performing system checks...
+    
+    System check identified some issues:
+    
+    WARNINGS:
+    polls.Choice: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+        HINT: Configure the DEFAULT_AUTO_FIELD setting or the PollsConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+    polls.Question: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+        HINT: Configure the DEFAULT_AUTO_FIELD setting or the PollsConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
