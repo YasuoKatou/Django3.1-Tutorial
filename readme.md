@@ -13,8 +13,8 @@
 ## 実行環境
 
 * windows 10 home
-* Python 3.8.6 (```python --version```)
-* Django 3.1.4 (```python -m django --version```)
+* Python 3.9.6 (```python --version```)
+* Django 3.2.5 (```python -m django --version```)
 
 ## Django コマンドのまとめ
 
