@@ -7,6 +7,7 @@
 * [はじめての Django アプリ作成、その 3](https://docs.djangoproject.com/ja/3.1/intro/tutorial03/)
 * [はじめての Django アプリ作成、その 4](https://docs.djangoproject.com/ja/3.1/intro/tutorial04/)
 * [はじめての Django アプリ作成、その 5](https://docs.djangoproject.com/ja/3.1/intro/tutorial05/)
+* [はじめての Django アプリ作成、その 7](https://docs.djangoproject.com/ja/3.2/intro/tutorial07/)
 
 までの内容を保存したものです。
 
@@ -47,7 +48,8 @@
   ```python manage.py test polls```
 
 ## 変更履歴
-(1) runserver を行うと、下記警告メッセージを出力する対応（2021/7/18)  
+(1) polls の投票データ項目の登録を管理画面で行う（2021/7/18)  
+(2) runserver を行うと、下記警告メッセージを出力する対応（2021/7/18)  
 
     Watching for file changes with StatReloader
     Performing system checks...
