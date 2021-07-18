@@ -12,7 +12,7 @@
 
 ## 実行環境
 
-* windows 10 home
+* Android 9, Termux (with code-server)
 * Python 3.9.6 (```python --version```)
 * Django 3.2.5 (```python -m django --version```)
 
